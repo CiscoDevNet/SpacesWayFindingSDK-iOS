@@ -23,7 +23,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SpacesWayFindingApp",
-            path: "Frameworks/SpacesWayFinding.xcframework"
+            path: "Frameworks/SpacesWayFindingApp.xcframework"
         ),
         .binaryTarget(
             name: "SpacesWayFindingSDK",
