@@ -7,7 +7,7 @@ let package = Package(
         .iOS(.v16)
     ],
     dependencies: [
-        .package(url: "https://github.com/CiscoDevNet/SpacesWayFindingSDK-iOS.git", branch: "main")
+        .package(url: "https://github.com/CiscoDevNet/SpacesWayFindingSDK-iOS.git", from: "1.0.0")
     ],
     targets: [
         .target(
