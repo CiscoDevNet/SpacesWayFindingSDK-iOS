@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "SpacesWayFindingApp",
     platforms: [
-        .iOS(.v11) // Adjust based on your minimum iOS version
+        .iOS(.v16) // Adjust based on your minimum iOS version
     ],
     products: [
         .library(
