@@ -9,7 +9,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/CiscoDevNet/SpacesWayFindingSDK-iOS.git",
-            branch: "main" // or your version tag/branch
+            from: "1.0.0" // or your version tag/branch
         )
     ],
     targets: [
