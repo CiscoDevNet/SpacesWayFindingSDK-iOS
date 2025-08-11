@@ -2,16 +2,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "SpacesWayFindingApp",
+    name: "SpacesWayFindingSDK-iOS",
     platforms: [
         .iOS(.v16) // Adjust based on your minimum iOS version
     ],
     products: [
         .library(
-            name: "SpacesWayFindingApp",
+            name: "SpacesWayFindingSDK-iOS",
             targets: [
                 "Mapbox",
-                "SpacesWayFindingAppBinary",
+                "SpacesWayFindingApp",
                 "SpacesWayFindingSDK"
             ]
         )
@@ -22,8 +22,8 @@ let package = Package(
             path: "Frameworks/Mapbox.xcframework"
         ),
         .binaryTarget(
-            name: "SpacesWayFindingAppBinary",
-            path: "Frameworks/SpacesWayFindingApp.xcframework"
+            name: "SpacesWayFindingApp",
+            path: "Frameworks/SpacesWayFinding.xcframework"
         ),
         .binaryTarget(
             name: "SpacesWayFindingSDK",
