@@ -2,18 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "SpacesWayFindingApp", // Your app package name (same as SDK repo/package)
+    name: "SpacesWayFindingSDK-iOS", // Your app package name (same as SDK repo/package)
     platforms: [
         .iOS(.v16)
     ],
     dependencies: [
-        .package(url: "https://github.com/CiscoDevNet/SpacesWayFindingSDK-iOS.git", from: "1.0.0")
+        .package(
+            url: "https://github.com/CiscoDevNet/SpacesWayFindingSDK-iOS.git",
+            branch: "main" // or your version tag/branch
+        )
     ],
     targets: [
         .target(
-            name: "SpacesWayFindingApp", // Your app target name
+            name: "SpacesWayFindingSDK-iOS", // Your app target name
             dependencies: [
-                .product(name: "SpacesWayFindingApp", package: "SpacesWayFindingApp")
+                .product(name: "SpacesWayFindingSDK-iOS", package: "SpacesWayFindingSDK-iOS")
             ]
         )
     ]
